@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reproductor Multimedia</title>
+</head>
+<body>
+
+    <h1>Reproductor Multimedia</h1>
+
+    <h2>Categorías</h2>
+
+    <nav>
+        <ul>
+            <li><a href="#documentales">Documentales</a></li>
+            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#tecnologia">Tecnología</a></li>
+        </ul>
+    </nav>
+
+    <h2 id="documentales">Documentales</h2>
+
+    <h2>video 2</h2>
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/HxbB2kRDl_0"
+        title="Reproductor de YouTube"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+
+    <h2 id="educacion">Educación</h2>
+
+    <h2>Video 1</h2>
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/95N_spFNEkY"
+        title="Reproductor de YouTube"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+
+    <h2 id="tecnologia">Tecnología</h2>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/HxbB2kRDl_0"
+        title="Reproductor de YouTube"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+
+</body>
+</html>
