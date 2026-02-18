@@ -7,19 +7,57 @@
 </head>
 <body>
 
-<div class="container">
-    <h2>➕ Registrar Gasto</h2>
+<div class="app">
+    <div class="header">
+        Nuevo Gasto
+    </div>
 
-    <input type="text" placeholder="Descripción del gasto">
-    <input type="number" placeholder="Monto">
-    <input type="date">
+    <div class="content">
 
-    <button>Guardar</button>
+        <div class="input-group">
+            <label>Descripción</label>
+            <input type="text" placeholder="Ej: Supermercado">
+        </div>
 
-    <a href="index.html">
-        <button>Volver al Inicio</button>
-    </a>
+        <div class="input-group">
+            <label>Monto</label>
+            <input type="number" placeholder="Ej: 150">
+        </div>
+
+        <!-- NUEVA CATEGORÍA -->
+        <div class="input-group">
+            <label>Categoría</label>
+            <select>
+                <option>Comida</option>
+                <option>Transporte</option>
+                <option>Entretenimiento</option>
+                <option>Servicios</option>
+                <option>Salud</option>
+                <option>Educación</option>
+                <option>Otros</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Fecha</label>
+            <input type="date" id="fecha">
+        </div>
+
+        <button class="btn btn-primary">Guardar</button>
+
+        <div class="back">
+            <a href="index.html">⬅ Volver al inicio</a>
+        </div>
+    </div>
 </div>
+
+<script>
+const hoy = new Date();
+const año = hoy.getFullYear();
+const mes = String(hoy.getMonth() + 1).padStart(2, '0');
+const dia = String(hoy.getDate()).padStart(2, '0');
+document.getElementById("fecha").value = `${año}-${mes}-${dia}`;
+</script>
 
 </body>
 </html>
