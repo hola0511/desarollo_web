@@ -2,30 +2,35 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Finanzas Personales</title>
+<title>Dashboard - Finanzas</title>
 <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-<div class="app">
-    <div class="header">
-        💳 Mis Finanzas
+<div class="layout">
+
+    <div class="sidebar">
+        <h2>💰 Finanzas</h2>
+        <a href="index.html">🏠 Inicio</a>
+        <a href="registro.html">➕ Registrar Gasto</a>
+        <a href="resumen.html">📊 Resumen</a>
     </div>
 
-    <div class="content">
+    <div class="main">
+        <div class="header">Panel Principal</div>
+
         <div class="card">
             <h3>Balance Total</h3>
             <h1>$5,000.00</h1>
         </div>
 
-        <a href="registro.html">
-            <button class="btn btn-primary">➕ Registrar Gasto</button>
-        </a>
+        <div class="card">
+            <h3>Gastos del Mes</h3>
+            <h1>$1,250.00</h1>
+        </div>
 
-        <a href="resumen.html">
-            <button class="btn btn-secondary">📊 Ver Resumen</button>
-        </a>
     </div>
+
 </div>
 
 </body>

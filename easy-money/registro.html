@@ -7,48 +7,53 @@
 </head>
 <body>
 
-<div class="app">
-    <div class="header">
-        Nuevo Gasto
+<div class="layout">
+
+    <div class="sidebar">
+        <h2>💰 Finanzas</h2>
+        <a href="index.html">🏠 Inicio</a>
+        <a href="registro.html">➕ Registrar Gasto</a>
+        <a href="resumen.html">📊 Resumen</a>
     </div>
 
-    <div class="content">
+    <div class="main">
+        <div class="header">Registrar Nuevo Gasto</div>
 
-        <div class="input-group">
-            <label>Descripción</label>
-            <input type="text" placeholder="Ej: Supermercado">
-        </div>
+        <div class="card">
 
-        <div class="input-group">
-            <label>Monto</label>
-            <input type="number" placeholder="Ej: 150">
-        </div>
+            <div class="form-group">
+                <label>Descripción</label>
+                <input type="text">
+            </div>
 
-        <!-- NUEVA CATEGORÍA -->
-        <div class="input-group">
-            <label>Categoría</label>
-            <select>
-                <option>Comida</option>
-                <option>Transporte</option>
-                <option>Entretenimiento</option>
-                <option>Servicios</option>
-                <option>Salud</option>
-                <option>Educación</option>
-                <option>Otros</option>
-            </select>
-        </div>
+            <div class="form-group">
+                <label>Monto</label>
+                <input type="number">
+            </div>
 
-        <div class="input-group">
-            <label>Fecha</label>
-            <input type="date" id="fecha">
-        </div>
+            <div class="form-group">
+                <label>Categoría</label>
+                <select>
+                    <option>Comida</option>
+                    <option>Transporte</option>
+                    <option>Entretenimiento</option>
+                    <option>Servicios</option>
+                    <option>Salud</option>
+                    <option>Educación</option>
+                    <option>Otros</option>
+                </select>
+            </div>
 
-        <button class="btn btn-primary">Guardar</button>
+            <div class="form-group">
+                <label>Fecha</label>
+                <input type="date" id="fecha">
+            </div>
 
-        <div class="back">
-            <a href="index.html">⬅ Volver al inicio</a>
+            <button>Guardar Gasto</button>
+
         </div>
     </div>
+
 </div>
 
 <script>

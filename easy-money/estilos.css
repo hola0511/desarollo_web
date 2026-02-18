@@ -6,113 +6,105 @@
 }
 
 body {
-    background-color: #f4f6f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #f1f5f9;
 }
 
-/* Simulación de app móvil */
-.app {
-    width: 380px;
-    height: 650px;
-    background: white;
-    border-radius: 25px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-    overflow: hidden;
+/* Layout principal */
+.layout {
     display: flex;
-    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Header */
-.header {
-    background: #111827;
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #0f172a;
     color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
+    padding: 30px 20px;
 }
 
-/* Contenido */
-.content {
-    padding: 25px;
+.sidebar h2 {
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: white;
+}
+
+/* Contenido principal */
+.main {
     flex: 1;
+    padding: 40px;
+}
+
+.header {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #1e293b;
 }
 
 /* Tarjetas */
 .card {
-    background: #1f2937;
-    color: white;
-    padding: 20px;
-    border-radius: 15px;
-    margin-bottom: 20px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
 }
 
 .card h3 {
-    font-size: 14px;
-    color: #9ca3af;
+    color: #64748b;
+    margin-bottom: 10px;
 }
 
 .card h1 {
-    margin-top: 5px;
-    font-size: 28px;
+    font-size: 30px;
+    color: #0f172a;
 }
 
-/* Botones */
-.btn {
+/* Formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #334155;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
     width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 14px;
+}
+
+button {
+    padding: 12px 20px;
+    border-radius: 8px;
     border: none;
-    font-weight: 600;
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.btn-primary {
-    background: #2563eb;
-    color: white;
-}
-
-.btn-primary:hover {
+button:hover {
     background: #1d4ed8;
-}
-
-.btn-secondary {
-    background: #e5e7eb;
-    color: #111827;
-}
-
-/* Inputs */
-.input-group {
-    margin-bottom: 15px;
-}
-
-.input-group label {
-    font-size: 13px;
-    color: #6b7280;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #d1d5db;
-    margin-top: 5px;
-    font-size: 14px;
-}
-
-/* Enlace volver */
-.back {
-    margin-top: 15px;
-    text-align: center;
-}
-
-.back a {
-    text-decoration: none;
-    color: #2563eb;
-    font-size: 14px;
 }
