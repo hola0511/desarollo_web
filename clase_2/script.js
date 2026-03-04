@@ -1,7 +1,13 @@
 const boton = document.getElementById("btnColor");
 
+let colorActual = "white";
+
 boton.addEventListener("click", function() {
-    const colores = ["#0DFF00", "#00FFEA", "#FF0000", "#F700FF"];
-    const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
-    document.body.style.backgroundColor = colorAleatorio;
+    if (colorActual === "white") {
+        document.body.style.backgroundColor = "blue";
+        colorActual = "blue";
+    } else {
+        document.body.style.backgroundColor = "white";
+        colorActual = "white";
+    }
 });
