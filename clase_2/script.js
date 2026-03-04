@@ -1,13 +1,13 @@
 const boton = document.getElementById("btnColor");
 
-let colorActual = "white";
+let colorActual = "green";
 
 boton.addEventListener("click", function() {
-    if (colorActual === "white") {
-        document.body.style.backgroundColor = "blue";
-        colorActual = "blue";
+    if (colorActual === "green") {
+        document.body.style.backgroundColor = "red";
+        colorActual = "red";
     } else {
-        document.body.style.backgroundColor = "white";
-        colorActual = "white";
+        document.body.style.backgroundColor = "green";
+        colorActual = "green";
     }
 });
